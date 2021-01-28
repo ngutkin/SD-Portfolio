@@ -187,9 +187,11 @@ html, body {
 
 .profile-content-wrapper h1 {
     color: slategray;
-
 }
 
+.profile-content-wrapper p {
+    color: whitesmoke;
+}
 /* Page Title Styles */
 .two-row-wrapper {
     display: grid;
