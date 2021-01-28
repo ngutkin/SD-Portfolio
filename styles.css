@@ -189,9 +189,14 @@ html, body {
     color: slategray;
 }
 
+.profile-content-wrapper a {
+    color: slateblue;
+    text-decoration: none;
+}
 .profile-content-wrapper p {
     color: whitesmoke;
 }
+
 /* Page Title Styles */
 .two-row-wrapper {
     display: grid;
