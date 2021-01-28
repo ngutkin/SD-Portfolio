@@ -1,0 +1,318 @@
+/* Master Styles */
+html, body {
+    font-family: "Rubik:wght@300", sans-serif !important;
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Nav Styles */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-family: "Rubik:wght@300", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.brand {
+    font-family: "Rubik:wght@300", sans-serif;
+    font-size: 1.2em;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 2px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+.active-nav-link {
+    border-bottom: 2px solid black !important;
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+
+.active-nav-link .dropbtn {
+    color: black !important;
+}
+/* The dropdown container */
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: #8a8a8a;
+    font-size: 16px;
+    margin-top: -2px;
+    background-color: inherit;
+    text-transform: uppercase;
+}
+  
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: #8a8a8a;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: color 0.5s;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+/* Portfolio Styles */
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    margin: auto;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 432px;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(75%);
+}
+.portfolio-img-background a {
+    display: block;
+}
+    
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.logo-wrapper img {
+    width: 130%;
+    margin-bottom: 10px;
+    margin-left: -50px;
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: whitesmoke;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+/* About Page Styles */
+
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+    width: 100%;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+    color: slategray;
+
+}
+
+/* Page Title Styles */
+.two-row-wrapper {
+    display: grid;
+    grid-template-rows: 0.2fr 1fr;
+}
+
+.portfolio-title-wrapper {
+    background-color: white;
+    position:relative;
+}
+
+.portfolio-title-wrapper h1 {
+    color: #1f1f1f;
+    text-align: center;
+}
+
+.portfolio-title-wrapper h2 {
+    color: #1f1f1f;
+    text-align: center;
+    font-size: 16px !important;
+}
+
+/* Slide Styles */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+
+.content-wrapper {
+    background-color: #1f1f1f;
+    margin: 15px;
+}
+.slideshow-container {
+  max-width: 40%;
+  position: relative;
+  margin: auto;
+  margin-top: 15px !important;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/9 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Mig Sus Styles */
+
+.mig-sus-wrapper img{
+    width: 80%;
+    background-color: #1f1f1f;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
